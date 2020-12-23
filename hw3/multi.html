@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+     function multi(n){
+          a = document.getElementById('n');
+          a.innerHTML="";
+        for (i = 1; i <= 12; i++) {
+           
+            a.innerHTML+=(n + " x " + i + " = " + (n * i));
+            a.innerHTML+=("<br>");
+        }
+    }
+</script>
+<body>
+    <label><b>2. โปรแกรม สูตรคูณ - multi.html</b></label><br>
+    <input type="text" id="number"required autofocus placeholder="สูตรคูณแม่ X" onkeyup="multi(this.value);"><br>
+    <table style="width:100%">
+        <div id="n"></div>
+    </table>
+</body>
+</html>
