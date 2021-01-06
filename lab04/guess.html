@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guess</title>
+</head>
+<script>
+    random = Math.floor((Math.random()* 10));
+    function guess(n){
+        n = document.getElementById('number').value
+        if(random==n){
+            document.writeln("ถูกต้อง")
+        }
+        else if(random<n){
+            
+        }
+    }
+
+
+</script>
+<body>
+    <input type="number" id="number">
+    <input type="text" id="random" onkeyup="Random(this.value);">
+    <button onclick="guess(this.value);" id="number">Guess</button>
+</body>
+</html>
