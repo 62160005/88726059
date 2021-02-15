@@ -1,0 +1,12 @@
+body {
+    font-size : 12px;
+    font-family : Tahoma;
+    background : url(back2.jpg) ;
+    background-size: cover;
+}
+tr{
+    color: rgb(14, 13, 13);
+}
+b{
+    color: rgb(24, 245, 215);
+}

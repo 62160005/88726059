@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+     body{
+        background : url(back2.jpg) ;
+        background-size: cover;
+     }
+</style>
+<script>
+      function tem(num,char){
+        var  num,char,C,F;
+        if(char=="C"){
+            if(num<=0){
+                document.getElementById('div1').innerHTML=("Solid");
+            }else if(num>=100){
+                document.getElementById('div1').innerHTML=("Gas");
+            }else if(num>0 && num<100){
+                document.getElementById('div1').innerHTML=("Liquid");
+            }
+        }else if(char=="F"){
+            if(num<=32){
+                document.getElementById('div1').innerHTML=("Solid");
+            }else if(num>=212){
+                document.getElementById('div1').innerHTML=("Gas");
+            }else if(num>33 && num<212){
+                document.getElementById('div1').innerHTML=("Liquid");
+            }
+        }
+    }
+</script>
+<body align="center">
+    <br>
+    <label><h1>แสดงสถานะของน้ำที่อุณหภูมินั้น</h1></label><br>
+    <label><p>1.รับค่าอุณหภูมิ </p></label> <label><p> 2.รับหน่วยของอุณหภูมิ</p></label><br>
+    <input type="number" id="num">
+    <input type="text" id="char">
+    <button onclick="tem(num.value,char.value)"> Convert </button><br>
+    <div id="div1"></div>
+</body>
+</html>
